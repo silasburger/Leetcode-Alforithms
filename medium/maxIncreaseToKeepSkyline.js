@@ -16,7 +16,7 @@ var maxIncreaseKeepingSkyline = function(grid) {
   for(let i = 0; i < grid.length; i++) {
       for(let j = 0; j < grid[0].length; j++) {
           count += Math.min(rowsMax[i], colsMax[j]) - grid[i][j];
-      }
+      } 
   }
   
   return count;
